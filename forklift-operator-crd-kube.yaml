@@ -1,13 +1,8 @@
-apiVersion: operators.coreos.com/v1alpha1
-kind: Subscription
+apiVersion: forklift.konveyor.io/v1beta1
+kind: ForkliftController
 metadata:
-    name: forklift-operator
-    namespace: my-forklift-operator
+  name: forklift-controller
+  namespace: my-forklift-operator
 spec:
-    channel: development
-    name: forklift-operator
-    source: konveyor-forklift
-    sourceNamespace: my-forklift-operator
-    installPlanApproval: Automatic
-    startingCSV: konveyor-forklift-operator.v99.0.0
-
+  feature_ui: 'true'
+  feature_validation: 'true'
