@@ -16,7 +16,7 @@ Installing requires having Kubernetes with OLM installed as well as having ingre
 
 1. Create namespace `kubectl namespace create my-forklift-operator`
 1. Create operator `kubectl create -f forklift-operator-catalog-kube.yaml`
-1. Create operator group `kubectl create -f forklift-operator-group.yaml`
+1. Create operator group `kubectl create -f forklift-operator-group-kube.yaml`
 1. Instantiate operator `kubectl create -f forklift-operator-crd-kube.yaml`
 
 ## Customize Settings
