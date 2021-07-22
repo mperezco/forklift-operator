@@ -32,6 +32,8 @@ Currently using a customized image:
     kubectl --namespace my-forklift-operator describe pods forklift-operator-64b7655786-wbpmn | grep Image:
       Image:         quay.io/fbladilo/forklift-operator:latest
 
+More info [Forklift PR-140](https://github.com/konveyor/forklift-operator/pull/140)
+
 ## Customize Settings
 
 Custom settings can be applied by editing the `ForkliftController` CR.
