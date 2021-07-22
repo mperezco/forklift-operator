@@ -10,15 +10,14 @@ Konveyor Forklift Operator installs a suite of migration tools that facilitate t
 
 Konveyor Forklift Operator is not yet available in OperatorHub.io
 
-### Installing _latest_
+### Installing 
 
-Installing latest is almost an identical procedure to released versions but requires creating a new catalog source.
+Installing requires having Kubernetes with OLM installed as well as having ingress router deployed
 
 1. Create namespace `kubectl namespace create my-forklift-operator`
 1. Create operator `kubectl create -f forklift-operator-catalog-kube.yaml`
-1. ???
-
-**Note:** Installing _Latest_ will also include OLM channels for released versions.
+1. Create operator group `kubectl create -f forklift-operator-group.yaml`
+1. Instantiate operator `kubectl create -f forklift-operator-crd-kube.yaml`
 
 ## Customize Settings
 
