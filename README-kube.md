@@ -29,6 +29,7 @@ When setting to false we avoid the UI route creation on k8s.
       feature_ui:          false
 
 Currently using a customized image:
+
     kubectl --namespace my-forklift-operator describe pods forklift-operator-64b7655786-wbpmn | grep Image:
       Image:         quay.io/fbladilo/forklift-operator:latest
 
@@ -38,7 +39,7 @@ More info [Forklift PR-140](https://github.com/konveyor/forklift-operator/pull/1
 
 Custom settings can be applied by editing the `ForkliftController` CR.
 
-`kubectl edit forkliftcontroller -n my-forklift-operator`
+    kubectl edit forkliftcontroller -n my-forklift-operator
 
 ## Forklift Documentation
 
